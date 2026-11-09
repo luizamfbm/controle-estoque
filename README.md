@@ -142,6 +142,9 @@ ponto → `ROLLBACK`.
 ## 6. Instruções para execução
 
 ```bash
+git clone https://github.com/luizamfbm/controle-estoque.git
+cd controle-estoque
+
 python -m venv .venv
 source .venv/bin/activate          # Windows: .venv\Scripts\activate
 pip install -r requirements-dev.txt
@@ -154,7 +157,7 @@ pytest
 pytest --cov=inventory --cov-report=term-missing   # com cobertura
 ```
 
-A documentação interativa (Swagger) fica em **http://localhost:8000/docs**: dá para
+Com o servidor rodando, a documentação interativa (Swagger) fica em **http://localhost:8000/docs**: dá para
 executar todas as operações pelo navegador.
 
 O caminho do banco pode ser trocado com a variável `INVENTORY_DB_PATH`.
